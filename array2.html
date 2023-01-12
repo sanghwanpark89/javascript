@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var nums = new Array();
+        var nums = new Array(5);
+        var nums = new Array(5,10,21);
+        var nums = new Array(5,10,21,"hello");
+        //Arary can have different data type in the array in javascript.
+        alert(typeof nums[3]);
+
+        var nums = new Array(5, 10, 21, "hello", new Array(2,3,4));
+
+        console.log(nums[4][2]);
+        alert(nums[4][2]);
+
+        //nums.splice(1);
+        //splice function will delete the all element after first elements
+        alert(nums);
+        console.log(nums);
+
+        nums.splice(1,1);
+        //splice function will delete from the first element and 1 length of this array.
+        alert(nums);
+        console.log(nums);
+
+        nums.splice(1,0,"hoho");
+        console.log(nums);
+        alert(nums);
+
+    </script>
+
+</body>
+</html>
