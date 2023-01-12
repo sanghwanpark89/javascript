@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var exam = new Object();
+        //create the Object
+
+        exam.kor = 30;
+        exam.eng = 40;
+        exam.math = 50;
+        //save the number with object
+
+        console.log(exam);
+
+        //it will print eng:40, kor: 30, math: 50
+
+        alert(exam.kor + exam.eng + exam.math);
+
+        var exam = {"kor": 30, "eng":70, "math":80};
+        var ar = [3,4,5,6,exam,[7,8,9]];
+
+        var notice = {"id":1, "title":"hello"};
+
+        console.log(exam);
+        //it will print exam
+        console.log(ar[4].kor);
+        //it will print kor score in ar array
+    </script>
+</body>
+</html>
