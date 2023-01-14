@@ -8,11 +8,6 @@
 </head>
 <body>
 
-    <input type="button" value="click" onclick="alert('hello');"><br>
-
-    <input type="button" value="please click" onclick="printResult()"><br>
-    <span onclick="alert('hello');">this is span</span>
-
     <script>
         function printResult(){
 
@@ -24,11 +19,21 @@
 
 
         alert(x+y);
-        docuement.write(x+y);
+        document.write(x+y);
         console.log(x+y);
+
+        btnPrint.value = x+y;
+        span1.innerText = x+y;
+        btnPrint.type="text";
 
         }
 
     </script>
+
+    <input type="button" value="click" onclick="alert('hello');"><br>
+    <input type="button" value="please click" onclick="printResult()" id="btnPrint"><br>
+    <span id="span1" onclick="alert('hello');">this is span</span>
+
+
 </body>
 </html>
