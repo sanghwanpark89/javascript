@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var x = prompt("Enter x value", 0);
+        var y = prompt("Enter y value", 0);
+
+        document.write(x+y);    //this line of code will show 34 because all the variable value will be stored as string value
+
+        //set the 0 as initial value. all values entered by users will be saved as string value
+
+        x = parseInt(x);
+        y = parseInt(y);
+
+        alert(x+y);
+        console.log(x+y);
+        document.write(x+y);
+
+        var answer = confirm("Are you sure to delete?, it will not be restgored once it is deleted");
+
+        if(answer){
+            alert("it is deleted completed");
+        }
+        else{
+            alert("it is canceled");
+        }
+    </script>
+
+</body>
+</html>
